@@ -1,41 +1,12 @@
-
-body > table{
-    width: 80%;
-    margin: 40px auto;
-    background-color: #FF335B;
+.socialDiv{
+    background: url(img.jpg);
 }
-table{
-    border-collapse: collapse;
+.sdiv{
+    margin-top: 150px;
 }
-table.list{
-    width: 100%;
-}
-td, th{
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 8px 15px;
-}
-tr:nth-child(even),table.list thead>tr{
-    background-color: #ddd;
-}
-input[type="text"], input[type="number"]{
-    width: 91%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-input[type="submit"],input[type="reset"]{
-    background: #eee;
-    padding: 6px 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 30px;
-    border: none;
-    margin: 15px 0 10px;
-    outline: none;
-}
-input[type="submit"]:hover{
-    background: #f3f3f3;
+body{
+    background-image: linear-gradient(to right top, #e1a3c7, #fba6b6, #ffb0a0, #ffc08c, #f6d482, #eed77e, #e5db7b, #dade7a, #e4d06c, #eec263, #f5b35f, #fba35f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
