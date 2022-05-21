@@ -1,0 +1,20 @@
+{
+  "name": "mobilewebsite",
+  "version": "1.0.0",
+  "description": "mobilesite",
+  "main": "index.html",
+  "scripts": {
+    "test": "mobile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "website"
+  },
+  "keywords": [
+    "mobile",
+    "site",
+    "website"
+  ],
+  "author": "pooja dongre",
+  "license": "ISC"
+}

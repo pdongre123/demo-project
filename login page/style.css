@@ -1,0 +1,12 @@
+.socialDiv{
+    background: url(img.jpg);
+}
+.sdiv{
+    margin-top: 150px;
+}
+body{
+    background-image: linear-gradient(to right top, #e1a3c7, #fba6b6, #ffb0a0, #ffc08c, #f6d482, #eed77e, #e5db7b, #dade7a, #e4d06c, #eec263, #f5b35f, #fba35f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
