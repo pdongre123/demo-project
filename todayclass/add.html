@@ -1,0 +1,32 @@
+<p>
+    <b>No1:</b><input />
+</p>
+
+<p>
+    <b>No2:</b><input />
+</p>
+
+<p>
+    <button onclick="add()">click</button>
+</p>
+
+<p>
+    <h1></h1>
+</p>
+
+<script>
+    
+  function add(){
+    var n1=Number(document.getElementsByTagName('input')[0].value);
+    var n2=parseInt(document.querySelector('p:nth-child(2)>input').value);
+    var sum=n1+n2
+    var h1Ref= document.querySelectorAll('h1')[0];
+    if(sum > 100){
+        h1Ref.style.color='red'
+    }else{
+        h1Ref.style.color='green'
+    }
+       h1Ref.innerText=sum;
+  }
+
+</script>

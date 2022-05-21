@@ -1,0 +1,36 @@
+
+<script>
+
+    function fnGetUsers(){
+        debugger;
+        var obj=new XMLHttpRequest();
+
+        //prepare the req
+
+        obj.open('get','https://jsonplaceholder.typicode.com/users')
+
+        //send the req
+
+        obj.send()
+
+        //process the req: server side guy
+
+        //success
+
+        obj.onload=function(){
+            debugger;
+           var result= obj.responseText;
+           document.querySelector('div').innerText=result;
+        }
+
+        //failure
+        obj.onerror=function(){
+            debugger;
+        }
+    }
+
+</script>
+
+<button onclick="fnGetUsers()">Get Users</button>
+
+<div></div>

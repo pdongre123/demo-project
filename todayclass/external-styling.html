@@ -1,0 +1,60 @@
+<style>
+    body{
+        margin:0
+    }
+  ul{
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    background: yellow;
+    line-height: 40px;
+  }
+  ul > li{
+    display: inline;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+  .active{
+    color: red;
+    font-size: 25px;
+    font-style: italic;
+  }
+</style>
+
+<ul onclick="fnClick(event)">
+    <li >Home</li>
+    <li >About</li>
+    <li >Contact</li>
+    <li >Service</li>
+</ul>
+
+<script>
+   function fnClick(eve){
+     eve.stopPropagation()
+     if(eve.target.nodeName != 'LI')return ;
+     document.querySelector('.active').classList.remove('active')
+     eve.target.classList.add('active')
+   }
+  /*
+    function fnHome(){
+        document.querySelector('.active').classList.remove('active')
+       document.querySelector('li:nth-child(1)').classList.add('active')
+    }
+    function fnAbout(){
+        document.querySelector('.active').classList.remove('active')
+        document.querySelector('li:nth-child(2)').classList.add('active')
+    }
+    function fnContact(){
+        document.querySelector('.active').classList.remove('active')
+        document.querySelector('li:nth-child(3)').classList.add('active')
+    }
+    function fnSerivce(){
+        document.querySelector('.active').classList.remove('active')
+        document.querySelector('li:nth-child(4)').classList.add('active')
+    }
+*/
+    document.querySelector('li:nth-child(1)').classList.add('active')
+</script>

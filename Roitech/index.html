@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#339BFF">
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for validation operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" >
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" >
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" 
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Gender
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Male</a></li>
+                          <li><a class="dropdown-item" href="#">Female</a></li>
+                          <li><a class="dropdown-item" href="#">Other</a></li>
+                        </ul>
+                      </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="delete" value="Delete">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="detailList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Date of Birth</th>
+                            <th>Gender</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

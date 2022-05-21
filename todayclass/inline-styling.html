@@ -1,0 +1,45 @@
+
+
+<style>
+.content{
+    height: 300px;
+    position: relative;
+}
+.arrow{
+    border: 1px solid red;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 150;
+    left:0
+}
+.wall{
+    height: 300px;
+    border: 1px solid red;
+    display: inline-block;
+    left: 500px;
+    position: absolute; 
+}
+</style>
+
+
+<div class="content">
+    <div class="arrow"></div>
+    <div class="wall"></div>
+</div>
+
+<button onclick="fnClick()">click</button>
+
+<script>
+    function fnClick(){
+        var arrowRef=document.querySelector('.arrow');
+       var l=0
+       var intervalId=setInterval(function(){
+          arrowRef.style.left=l++
+          if(l==400){
+              clearInterval(intervalId)
+          }
+        },10)
+       
+    }
+</script>
